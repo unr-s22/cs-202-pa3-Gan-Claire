@@ -12,8 +12,7 @@ Authors: Claire Gan, Sierra Scott, and Peverel Shipley
 using namespace std;
 
 int main() {
-    Account account;
-    account.createAccount(30023);
+    Account account(30023);
 
     cout << account << endl;
 
