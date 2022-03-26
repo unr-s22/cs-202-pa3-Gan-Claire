@@ -27,9 +27,6 @@ int main() {
 
     cout << account << endl;
 
-    Money m;
-    Money n;
-
     Money m(100,10);
     Money n(100,10);
     if(m > n){
