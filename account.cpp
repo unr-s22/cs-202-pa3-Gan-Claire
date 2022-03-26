@@ -4,11 +4,26 @@
 using namespace std;
 
 class Account() {
+private:
+        int x;
 
-void deposits(){
-    Money(double b) {
-    balance = b;
+
+public:
+    Money(int x1)
+    {
+        x = x1
     }
+    int getX()
+    {
+        return x;
+    
+    }
+};
+void makeDeposit(){
+    Money(double balance) {
+    double balance;
+    }
+    int sum;
     int n, sum = balance;
     balance = 100.55;
     cout << "Please enter number of deposits. " << endl;
@@ -24,10 +39,10 @@ void deposits(){
             sum+=arr[i];
 
     cout<<"\n total sum ammount:"<<sum;
-    return 0;
+    return sum;
     }
 }
-void withdrawls(){
+void makeWithdrawls(){
     int n, sum = sum;
     cout<<"total account balance:"<<sum<<endl;
     cout<<"How many withdrawls would you like to make"<<endl;
