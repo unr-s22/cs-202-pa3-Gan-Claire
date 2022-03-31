@@ -12,20 +12,31 @@ Authors: Claire Gan, Sierra Scott, and Peverel Shipley
 using namespace std;
 
 int main() {
-    Account account(30023);
+    //Money newAccount(300, 23);
+    Money deposit(300, 23);
+    Money withdrawal(300, 10);
 
-    cout << account << endl;
+    Account testAccount(deposit);
 
-    account.makeDeposit(20000);
-    account.makeDeposit(30024);
-    account.makeDeposit(50122);
+    cout << testAccount << endl;
+
+    deposit.Money::setMoney(200, 0);
+    testAccount.Account::makeDeposit(deposit);
+    deposit.Money::setMoney(300, 24);
+    testAccount.Account::makeDeposit(deposit);
+    deposit.Money::setMoney(501, 22);
+    testAccount.Account::makeDeposit(deposit);
+    testAccount.Account::recalculate();
 	
-	cout << account << endl;
+	cout << testAccount << endl;
 
-    account.makeWithdrawals(30010);
-    account.makeWithdrawals(20134);
+    withdrawal.Money::setMoney(300, 10);
+    testAccount.Account::makeWithdrawals(withdrawal);
+    withdrawal.Money::setMoney(201, 34);
+    testAccount.Account::makeWithdrawals(withdrawal);
+    testAccount.Account::recalculate();
 
-    cout << account << endl;
+    cout << testAccount << endl;
 
     Money m(100,10);
     Money n(100,10);

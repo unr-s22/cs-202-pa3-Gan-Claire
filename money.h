@@ -20,6 +20,15 @@ public:
 		all_cents = d * 100 + c;
 	}
 
+	void setMoney(int d, int c)
+	{
+		all_cents = d * 100 + c;
+	}
+
+	int getMoney(){
+		return all_cents;
+	}
+
 	//overloads relational operators
 	bool operator <(const Money &rhs) const{
 		return all_cents < rhs.all_cents;
