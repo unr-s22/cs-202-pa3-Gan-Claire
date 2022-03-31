@@ -3,55 +3,34 @@
 
 using namespace std;
 
-class Account() {
-private:
-        int x;
-
-
-public:
-    Money(int x1)
-    {
-        x = x1
-    }
-    int getX()
-    {
-        return x;
-    
-    }
-};
-void makeDeposit(){
+void Account::makeDeposit(){
     Money(double balance) {
     double balance;
     }
     int sum;
     int n, sum = balance;
-    balance = 100.55;
-    cout << "Please enter number of deposits. " << endl;
-    cin>> n;
-    int arr[n];
+    balance = 300.23;
     cout << "Enter deposit amounts";
+        void deposit(const money &m);
+        deposit = arr[i];
+        //amounts from main
 
-        for(int i=0; i<n; i++){
-            cin>>arr[i];
-    }
-
-        for(int i=0;i<n;i++)
+        for(int i=0;i<n;i++) {
             sum+=arr[i];
-
-    cout<<"\n total sum ammount:"<<sum;
-    return sum;
     }
+
+    cout<<"\n total sum amount:"<<sum;
+    return sum;
 }
-void makeWithdrawls(){
+
+
+void Account::makeWithdrawls(){
     int n, sum = sum;
     cout<<"total account balance:"<<sum<<endl;
-    cout<<"How many withdrawls would you like to make"<<endl;
-    cin>> n;
-    int arr[n];
-    cout<<"Enter the total withdrawl ammounts";
+    cout<<"Enter the total withdrawl amounts";
 
-        for(int i=0; i<n; i++){
-            cin>>arr[i];
+        void withdrawl(const money &m);
+        withdrawl = arr[i];
 
         }
 
@@ -62,9 +41,4 @@ void makeWithdrawls(){
         return 0;
         }
 
-
-
-        }
-
-    }
 }
